@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/reset.css';
 import './styles/style.css';
-import Principal from "./components/principal"
+import Login from "./components/login"
 
-function App() {
+function Main() {
   return (
     <>
-      <Principal/>
+      <Login/>
     </>
   );
 }
 
-export default App;
+export default Main;
