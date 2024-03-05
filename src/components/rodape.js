@@ -1,8 +1,8 @@
 import React from "react";
 
-function Rodape(props) {
+function Rodape() {
 
-     return (
+    return (
         <>
             
             <footer className="footer-form">

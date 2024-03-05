@@ -1,6 +1,6 @@
 import Rodape from "./rodape";
 
-const Principal = () => {
+const Login = () => {
 
 
     return (
@@ -40,12 +40,10 @@ const Principal = () => {
             
 
 
-                <Rodape >  
-                    TesTe
-                </Rodape>
+                <Rodape />  
 
             </>
             )
 };
 
-export default Principal;
+export default Login;
