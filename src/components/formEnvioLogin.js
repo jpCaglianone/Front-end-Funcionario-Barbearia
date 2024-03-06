@@ -1,6 +1,28 @@
 import { Link } from "react-router-dom";
+import React, { useState } from 'react';
 
 function FormEnvioLogin() {
+
+
+
+  const [campoState, setCampoState] = useState({
+    senha: "",
+    email: ""
+  })
+
+  const campoAlterado = (event) => {
+    let valor = event.target.value;
+    let id = event.target.id;
+
+      setCampoState((valorAnterior) => {
+    
+            let novoValor = { ...valorAnterior, [id]:valor}
+            return novoValor
+      })
+
+    console.log(campoState)
+  }
+
   return (
     <>
       <div id="titulo">
@@ -32,7 +54,8 @@ function FormEnvioLogin() {
               placeholder="USUÁRIO"
               required
               class="txt-input"
-              id="txt-nome"
+              id="email"
+              onChange={campoAlterado}
             />
           </div>
           <div class="senha-form">
@@ -51,7 +74,8 @@ function FormEnvioLogin() {
               placeholder="SENHA"
               required
               class="txt-input"
-              id="txt-senha"
+              id="senha"
+              onChange={campoAlterado}
             />
           </div>
 
